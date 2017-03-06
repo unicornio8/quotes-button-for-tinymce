@@ -1,0 +1,86 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quote button for TinyMCE\n"
+"POT-Creation-Date: 2017-03-05 23:36-0600\n"
+"PO-Revision-Date: 2017-03-05 23:43-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: tinymce-quotes.php\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+# Title for the button on the visual editor
+#: tinymce-quotes.php:82
+msgid "Quote"
+msgstr "Citas"
+
+# Title of the modal popup
+#: tinymce-quotes.php:83
+msgid "Insert Quote"
+msgstr "Insertar cita"
+
+# Title of the button when you are hovering an existing Quote
+#: tinymce-quotes.php:84
+msgid "Delete Quote"
+msgstr "Eliminar cita"
+
+# 'Description' field in the modal popup
+#: tinymce-quotes.php:85
+msgid "Description"
+msgstr "Descripción"
+
+# 'Link' field in the modal popup
+#: tinymce-quotes.php:86
+msgid "Link for your description"
+msgstr "Link para la descripcion de la cita (Opcional)"
+
+# 'Background' field in the modal popup
+#: tinymce-quotes.php:87
+msgid "Select color background for tooltip"
+msgstr "Seleccionar el color de fondo para el tooltip"
+
+# 'title' help in the modal popup
+#: tinymce-quotes.php:88
+msgid "Select color font for tooltip"
+msgstr "Seleccionar el color de la fuente para el tooltip"
+
+# Javascript alert if you haven't selected any text
+#: tinymce-quotes.php:89
+msgid "Please select some text first"
+msgstr "Por favor seleccione algun texto primero"
+
+# Name of the plugin: please DO NOT TRANSLATE THIS :)
+#. Plugin Name of the plugin/theme
+msgid "Quote button for TinyMCE"
+msgstr "Buton para TinyMCE de citas"
+
+# PLEASE DO NOT TRANSLATE THIS :)
+#. Plugin URI of the plugin/theme
+msgid "http://github.com/unicornio8/quotes-button-for-tinymce/"
+msgstr "http://github.com/unicornio8/quotes-button-for-tinymce/"
+
+# Description of the plugin in the WordPress Plugin Repo. You can tanslate it in your language :)
+#. Description of the plugin/theme
+msgid "Provides Quotes button for WordPress TinyMCE visual editor."
+msgstr ""
+"Provee un butón para insertar citas en el editor visual de wordpress "
+"TinyMCE."
+
+#. Author of the plugin/theme
+msgid "Rafael Martínez"
+msgstr "Rafael Martínez"
+
+#. Author URI of the plugin/theme
+msgid "http://github.com/unicornio8"
+msgstr "http://github.com/unicornio8"
