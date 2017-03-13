@@ -30,6 +30,7 @@ class TinyMCE_Quotes {
 	function __construct() {
 		if ( is_admin() ) {
 			add_action( 'init', array(  $this, 'setup_tinymce_quote' ) );
+			add_action( 'admin_enqueue_scripts', array( $this, 'add_admin_styles_tinymce_quote' ) );
 		} else {
 			add_action( 'wp_enqueue_scripts', array( $this, 'add_scripts_tinymce_quote' ) );
 			add_action( 'wp_enqueue_scripts', array( $this, 'add_styles_tinymce_quote' ) );
@@ -57,6 +58,14 @@ class TinyMCE_Quotes {
 	function add_styles_tinymce_quote()
 	{
 		wp_enqueue_style('quotes-tooltips-style', plugins_url( '/public/css/tooltips.css' , __FILE__ ));
+	}
+	/**
+	* Add tooltip style
+	* 
+	*/
+	function add_admin_styles_tinymce_quote()
+	{
+		wp_enqueue_style('quotes-admin-style', plugins_url( '/admin/css/tinymce-quote-class.css' , __FILE__ ));
 	}
 	/**
 	* Check if the current user can edit Posts or Pages, and is using the Visual Editor
@@ -108,10 +117,9 @@ class TinyMCE_Quotes {
 				'quote_add_button' 				=> __('Quote', 'quotes-button-for-tinymce'),
 				'quote_insert_button' 			=> __('Insert quote', 'quotes-button-for-tinymce'),
 				'quote_delete_button' 			=> __('Delete quote', 'quotes-button-for-tinymce'),
-				'quote_description_label' 		=> __('Description', 'quotes-button-for-tinymce'),
-				'quote_link_label' 				=> __('Link for your description', 'quotes-button-for-tinymce'),
+				'quote_title_label' 			=> __('Quotes Plugin', 'quotes-button-for-tinymce'),
+				'quote_content_label' 			=> __('Content for tooltip', 'quotes-button-for-tinymce'),
 				'quote_background_color_label'	=> __('Select color background for tooltip', 'quotes-button-for-tinymce'),
-				'quote_font_color_label' 		=> __('Select color font for tooltip', 'quotes-button-for-tinymce'),
 				'quote_alert' 					=> __('Please select some text first', 'quotes-button-for-tinymce')
 			)
 		);

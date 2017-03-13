@@ -37,23 +37,18 @@ msgstr "Eliminar cita"
 
 # 'Description' field in the modal popup
 #: tinymce-quotes.php:85
-msgid "Description"
-msgstr "Descripción"
+msgid "Quotes Plugin"
+msgstr "Agregar citas Ethos©"
 
-# 'Link' field in the modal popup
+# 'Content' field in the modal popup
 #: tinymce-quotes.php:86
-msgid "Link for your description"
-msgstr "Link para la descripcion de la cita (Opcional)"
+msgid "Content for tooltip"
+msgstr "Contenido de la cita"
 
 # 'Background' field in the modal popup
 #: tinymce-quotes.php:87
 msgid "Select color background for tooltip"
 msgstr "Seleccionar el color de fondo para el tooltip"
-
-# 'title' help in the modal popup
-#: tinymce-quotes.php:88
-msgid "Select color font for tooltip"
-msgstr "Seleccionar el color de la fuente para el tooltip"
 
 # Javascript alert if you haven't selected any text
 #: tinymce-quotes.php:89

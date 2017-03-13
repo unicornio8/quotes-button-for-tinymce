@@ -1,0 +1,26 @@
+#mce-modal-block{
+    z-index: 100099 !important;
+}
+#tinymce-quote-insert-dialog{
+    z-index: 100100 !important;
+}
+#tinymce-quote-insert-dialog .mce-tinymce{
+    position: static;
+}
+/*
+#tinymce-quote-insert-dialog-body.mce-window-body #tinymce-quote-content-l,
+#tinymce-quote-insert-dialog-body.mce-window-body #tinymce-quote-content,
+#tinymce-quote-insert-dialog-body.mce-window-body .quote_row{
+    clear: both;
+}
+#tinymce-quote-insert-dialog-body.mce-window-body #tinymce-quote-content-l,
+#tinymce-quote-insert-dialog-body.mce-window-body .quote_row{
+    width: 100%;
+}
+*/
+#tinymce-quote-insert-dialog-body.mce-window-body .wp-picker-container.wp-picker-active{
+    background: #FFF;
+    padding: 0px 10px 10px 10px;
+    position: absolute;
+    z-index: 100101 !important;
+}
