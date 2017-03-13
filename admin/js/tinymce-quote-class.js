@@ -518,8 +518,13 @@
 							tmpHMTL = tmpHMTL.toString().replace(/"/g, "'");
 						}
 
-						//var htmlNode = $('<span class="u8-quote-plugin">' + text + '</span>');
 						var htmlNode = $(text);
+						
+						if (htmlNode.length == 0) {
+							//When you mark only text wrap it with span
+							htmlNode = $('<span>' + text + '</span>');
+						}
+
 						htmlNode.addClass('u8-quote-plugin');
 						htmlNode.attr('data-body', tmpHMTL);
 						htmlNode.attr('data-colorBackground', e.data.quoteBackgroundColor);
