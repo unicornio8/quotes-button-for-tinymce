@@ -28,6 +28,7 @@
 			var text = editor.selection.getContent({
 				'format': 'html'
 			});
+
 			if ( text.length === 0 ) {
 				alert( quoteTranslations['quote_alert'] );
 				return;
@@ -519,12 +520,13 @@
 						}
 
 						var htmlNode = $(text);
-						
-						if (htmlNode.length == 0) {
+						var htmlNodeValidation = $(text).contents();
+
+						if (htmlNodeValidation.length == 1 && htmlNodeValidation[0].nodeType == 3) {
 							//When you mark only text wrap it with span
 							htmlNode = $('<span>' + text + '</span>');
-						}
-
+						} 
+						
 						htmlNode.addClass('u8-quote-plugin');
 						htmlNode.attr('data-body', tmpHMTL);
 						htmlNode.attr('data-colorBackground', e.data.quoteBackgroundColor);
